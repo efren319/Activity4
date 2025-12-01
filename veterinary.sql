@@ -158,4 +158,7 @@ WHERE animalid = (SELECT animalid FROM animals WHERE name = 'Simba');
 
 UPDATE doctors
 SET lastname = 'Reyes-Gonzales'
-WHERE lastname = 'Reyes';  -- or use doctorid if known
+WHERE lastname = 'Reyes'; 
+
+SELECT DISTINCT species
+FROM animals;
