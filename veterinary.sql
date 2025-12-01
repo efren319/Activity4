@@ -146,3 +146,6 @@ INSERT INTO medicalrecords (recordid, animalid, diagnosis, treatment, recorddate
 (8, 8, 'Obesity', 'Diet plan', '2025-12-08'),
 (9, 9, 'Cough', 'Cough syrup', '2025-12-09'),
 (10, 10, 'Vaccination', 'Rabies vaccine', '2025-12-10');
+
+ALTER TABLE owners
+ADD COLUMN registereddate DATE;
