@@ -123,4 +123,14 @@ VALUES
 (9, 'Mark', 'Villanueva', 'Radiology Specialist', '09392233445', 'mark@example.com'),
 (10, 'Theresa', 'Cruz', 'Rehabilitation Specialist', '09473344556', 'theresa@example.com');
 
-
+INSERT INTO invoices (invoiceid, appointid, amount, paymenttime) VALUES
+(1, 1, 1500.00, '2025-12-01'),
+(2, 2, 2000.00, '2025-12-02'),
+(3, 3, 1200.00, '2025-12-03'),
+(4, 4, 1800.00, '2025-12-04'),
+(5, 5, 2500.00, '2025-12-05'),
+(6, 6, 1700.00, '2025-12-06'),
+(7, 7, 2200.00, '2025-12-07'),
+(8, 8, 1600.00, '2025-12-08'),
+(9, 9, 1900.00, '2025-12-09'),
+(10, 10, 2100.00, '2025-12-10');
