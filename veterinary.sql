@@ -134,3 +134,15 @@ INSERT INTO invoices (invoiceid, appointid, amount, paymenttime) VALUES
 (8, 8, 1600.00, '2025-12-08'),
 (9, 9, 1900.00, '2025-12-09'),
 (10, 10, 2100.00, '2025-12-10');
+
+INSERT INTO medicalrecords (recordid, animalid, diagnosis, treatment, recorddate) VALUES
+(1, 1, 'Fever', 'Antibiotics', '2025-12-01'),
+(2, 2, 'Skin Allergy', 'Topical cream', '2025-12-02'),
+(3, 3, 'Fracture', 'Cast', '2025-12-03'),
+(4, 4, 'Dental Issue', 'Tooth extraction', '2025-12-04'),
+(5, 5, 'Ear Infection', 'Ear drops', '2025-12-05'),
+(6, 6, 'Parasites', 'Deworming', '2025-12-06'),
+(7, 7, 'Arthritis', 'Pain reliever', '2025-12-07'),
+(8, 8, 'Obesity', 'Diet plan', '2025-12-08'),
+(9, 9, 'Cough', 'Cough syrup', '2025-12-09'),
+(10, 10, 'Vaccination', 'Rabies vaccine', '2025-12-10');
