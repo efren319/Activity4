@@ -21,18 +21,6 @@ CREATE TABLE animals (
     FOREIGN KEY (ownerid) REFERENCES owners(ownerid)
 );
 
-CREATE TABLE animals (
-    animalid INT PRIMARY KEY,
-    name VARCHAR(50),
-    species VARCHAR(50),
-    breed VARCHAR(50),
-    dateofbirth DATE,
-    gender VARCHAR(10),
-    color VARCHAR(50),
-    ownerid INT,
-    FOREIGN KEY (ownerid) REFERENCES owners(ownerid)
-);
-
 CREATE TABLE appointments (
     appointid INT PRIMARY KEY,
     animalid INT,
@@ -169,3 +157,10 @@ JOIN animals an ON o.ownerid = an.ownerid
 JOIN appointments a ON an.animalid = a.animalid
 WHERE o.ofirstname = 'Maria'
 GROUP BY o.ofirstname, o.olastname;
+
+SELECT an.name, COUNT(a.appointid) AS total_appointments
+FROM animals an
+JOIN appointments a ON an.animalid = a.animalid
+GROUP BY an.name
+ORDER BY total_appointments DESC
+LIMIT 1;
