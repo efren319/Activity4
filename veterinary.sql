@@ -149,3 +149,6 @@ INSERT INTO medicalrecords (recordid, animalid, diagnosis, treatment, recorddate
 
 ALTER TABLE owners
 ADD COLUMN registereddate DATE;
+
+ALTER TABLE invoices
+RENAME COLUMN paymentdate TO paymenttime;
