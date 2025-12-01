@@ -160,5 +160,5 @@ UPDATE doctors
 SET lastname = 'Reyes-Gonzales'
 WHERE lastname = 'Reyes'; 
 
-SELECT DISTINCT species
-FROM animals;
+SELECT SUM(amount) AS total_sales
+FROM invoices;
